@@ -85,6 +85,7 @@
  --dark-gray: #434b56;
  --gray: #646e7b;
  --light-gray: #d1d2d3;
+ --tag-gray: #f6f6f6;
  --yellow: #ffce51;
  --orange: #f59e33;
  --dark-orange: #df6941;
@@ -193,6 +194,7 @@
 .b--dark-gray { border-color: var(--dark-gray); }
 .b--gray { border-color: var(--gray); }
 .b--light-gray { border-color: var(--light-gray); }
+.b--tag-gray { border-color: var(--tag-gray); }
 .b--yellow { border-color: var(--yellow); }
 .b--orange { border-color: var(--orange); }
 .b--dark-orange { border-color: var(--dark-orange); }

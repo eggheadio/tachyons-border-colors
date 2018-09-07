@@ -1,10 +1,10 @@
-# tachyons-border-colors 4.2.0
+# tachyons-border-colors 4.2.3
 
 Performance based css module.
 
-#### Stats
+### Stats
 
-868 | 60 | 60
+919 | 60 | 59
 ---|---|---
 bytes | selectors | declarations
 
@@ -34,7 +34,7 @@ git clone git@github.com:tachyons-css/tachyons-border-colors.git
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -42,24 +42,24 @@ Import the css module
 @import "tachyons-border-colors";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
 $ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
 ##### CDN
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://npmcdn.com/tachyons-border-colors@4.2.0/css/tachyons-border-colors.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-border-colors@4.2.3/css/tachyons-border-colors.min.css" />
 ```
 
 ##### Locally
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -68,12 +68,13 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
+/* Modified by Egghead */
 /*
 
    Tachyons
@@ -85,6 +86,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
    Colors
 
 */
+:root {/* Next iteration vars *//* Still active previous vars */ }
 /*
 
    BORDER COLORS
@@ -105,14 +107,6 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 
 */
 .b--black { border-color: #000; }
-.b--near-black { border-color: #111; }
-.b--dark-gray { border-color: #333; }
-.b--mid-gray { border-color: #555; }
-.b--gray { border-color: #777; }
-.b--silver { border-color: #999; }
-.b--light-silver { border-color: #aaa; }
-.b--light-gray { border-color: #eee; }
-.b--near-white { border-color: #f4f4f4; }
 .b--white { border-color: #fff; }
 .b--white-90 { border-color: rgba( 255, 255, 255, .9 ); }
 .b--white-80 { border-color: rgba( 255, 255, 255, .8 ); }
@@ -138,32 +132,40 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .b--black-05 { border-color: rgba( 0, 0, 0, .05 ); }
 .b--black-025 { border-color: rgba( 0, 0, 0, .025 ); }
 .b--black-0125 { border-color: rgba( 0, 0, 0, .0125 ); }
-.b--dark-red { border-color: #e7040f; }
-.b--red { border-color: #ff4136; }
-.b--light-red { border-color: #ff725c; }
-.b--orange { border-color: #ff6300; }
-.b--gold { border-color: #ffb700; }
-.b--yellow { border-color: #ffd700; }
-.b--light-yellow { border-color: #fbf1a9; }
-.b--purple { border-color: #5e2ca5; }
-.b--light-purple { border-color: #a463f2; }
-.b--dark-pink { border-color: #d5008f; }
-.b--hot-pink { border-color: #ff41b4; }
-.b--pink { border-color: #ff80cc; }
-.b--light-pink { border-color: #ffa3d7; }
-.b--dark-green { border-color: #137752; }
-.b--green { border-color: #19a974; }
-.b--light-green { border-color: #9eebcf; }
-.b--navy { border-color: #001b44; }
-.b--dark-blue { border-color: #00449e; }
-.b--blue { border-color: #357edd; }
-.b--light-blue { border-color: #96ccff; }
-.b--lightest-blue { border-color: #cdecff; }
-.b--washed-blue { border-color: #f6fffe; }
-.b--washed-green { border-color: #e8fdf5; }
-.b--washed-yellow { border-color: #fffceb; }
-.b--washed-red { border-color: #ffdfdf; }
 .b--transparent { border-color: transparent; }
+.b--white-secondary { border-color: #f8f8f8; }
+.b--base { border-color: #21252d; }
+.b--base-secondary { border-color: #141618; }
+.b--base-light { border-color: #323439; }
+.b--gray { border-color: #f4f7f9; }
+.b--gray-secondary { border-color: #e2e3e7; }
+.b--dark-gray { border-color: #63768d; }
+.b--dark-gray-secondary { border-color: #b0b6be; }
+.b--blue { border-color: #316aff; }
+.b--blue-secondary { border-color: #2758b8; }
+.b--dark-blue { border-color: #344055; }
+.b--dark-blue-secondary { border-color: #273040; }
+.b--green { border-color: #409b6b; }
+.b--green-secondary { border-color: #36855b; }
+.b--orange { border-color: #fd9126; }
+.b--orange-secondary { border-color: #c97420; }
+.b--red { border-color: #f0624d; }
+.b--red-secondary { border-color: #c44c3a; }
+.b--yellow { border-color: #fbc155; }
+.b--yellow-secondary { border-color: #d2a043; }
+/* Legacy classes */
+.b--dark-navy { border-color: #141618; }
+.b--navy { border-color: #21252d; }
+.b--light-navy { border-color: #344055; }
+.b--light-gray { border-color: #f8f8f8; }
+.b--tag-gray { border-color: rgba( 255, 255, 255, .9 ); }
+.b--dark-orange { border-color: #c97420; }
+.b--tag-orange { border-color: rgba( 255, 255, 255, .7 ); }
+.b--tag-blue { border-color: rgba( 255, 255, 255, .7 ); }
+.b--dark-green { border-color: #36855b; }
+.b--turquoise { border-color: #36855b; }
+.b--tag-turquoise { border-color: rgba( 255, 255, 255, .7 ); }
+.b--dark-red { border-color: #c44c3a; }
 ```
 
 ## Contributing
